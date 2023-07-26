@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; /* Elimina el margen por defecto */
+  font-size: inherit; /* Hereda el tamaño de fuente del elemento padre */
+  font-weight: inherit; /* Hereda el peso de fuente del elemento padre */
+  line-height: inherit; /* Hereda la altura de línea del elemento padre */
+}
+
+
+
+
+
+
+
+
+
+@font-face {
+  font-family: "Manrope";
+  src: url("assets/fonts/Manrope-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Dosis-ExtraLight";
+  src: url("assets/fonts/Dosis-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Miedinger-Bold";
+  src: url("assets/fonts/Miedinger-Bold.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald-Regular";
+  src: url("assets/fonts/Oswald-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins-Light";
+  src: url("assets/fonts/Poppins-Light.ttf") format("truetype");
+}
+
+
+

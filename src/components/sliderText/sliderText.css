@@ -1,0 +1,87 @@
+.slider-text-container {
+  display: flex;
+  position: absolute;
+  top: 65vh;
+  left: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  min-width: max-content;
+}
+
+.slider-text-container h1 {
+  font-family: Manrope;
+  color: rgb(255 255 255);
+  font-size: 200px;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+.text-wrap-1 {
+  min-width: max-content;
+  animation: slideText1 12s infinite linear forwards;
+}
+.text-wrap-2 {
+  animation: slideText1 12s infinite linear forwards;
+  animation-delay: 2s;
+  min-width: max-content;
+}
+
+@keyframes slideText1 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-120%);
+  }
+}
+@keyframes slideText2 {
+  0% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(calc(-100%));
+  }
+}
+/* Media query para tamaños de pantalla medianos (ejemplo: tabletas) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* .text-wrap-1 {
+    animation: slideText1 12s infinite linear forwards;
+    min-width: max-content;
+  }
+
+  .text-wrap-2 {
+    animation: slideText1 12s infinite linear forwards;
+    animation-delay: 2s;
+    min-width: max-content;
+  } */
+
+  .slider-text-container {
+    top: 75vh;
+  }
+  .slider-text-container h1 {
+    font-size: 170px;
+  }
+}
+
+/* Media query para tamaños de pantalla grandes (ejemplo: pantallas de escritorio) */
+@media (min-width: 1024px) {
+  .slider-text-container h1 {
+    font-size: 170px;
+    letter-spacing: 0.05em;
+  }
+
+  /* .text-wrap-1 {
+    animation: slideText1 12s infinite linear forwards;
+    min-width: max-content;
+  }
+
+  .text-wrap-2 {
+    animation: slideText1 12s infinite linear forwards;
+    animation-delay: 2s;
+    min-width: max-content;
+  } */
+}
