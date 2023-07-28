@@ -13,8 +13,7 @@ function Hero() {
         <div className="left-column">
           <img
             data-scroll
-            data-scroll-speed="2"
-            data-scroll-direction="vertical"
+            data-scroll-speed="0.1"
             className="img"
             src={danielPng}
           />
@@ -22,8 +21,8 @@ function Hero() {
         <div className="right-column">
           <div
             data-scroll
-            data-scroll-speed="3"
-            data-scroll-direction="vertical"
+            data-scroll-speed="0.2"
+            // data-scroll-direction="vertical"
             className="text-container"
           >
             <span>Fullstack Web Developer</span>

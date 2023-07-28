@@ -11,7 +11,7 @@ function Footer() {
       <div className="footer-top-container">
         <h3
           data-scroll
-          data-scroll-speed="2"
+          data-scroll-speed="0.2"
         >
           {aboutText}
         </h3>
@@ -61,7 +61,7 @@ function Footer() {
           <div className="footer-socials">Socials</div>
           <div className="footer-socials-links ">
             <a href="https://www.linkedin.com/in/daniel-pacheco-782241174/">
-              <span className="text-white">LinkedIn</span>
+              <span>LinkedIn</span>
             </a>
             <a
               href="https://github.com/StratoDev89"
@@ -69,8 +69,7 @@ function Footer() {
               rel="noopener noreferrer"
             >
               <span
-                className="px-2 text-white"
-                style={{ paddingLeft: 8 }}
+              
               >
                 Github
               </span>

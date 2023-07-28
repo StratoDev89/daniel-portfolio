@@ -1,7 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./menuButoon.css";
-import { bottomBar, topBar, variants } from "../../constants/menuButtonConstants";
+import {
+  bottomBar,
+  topBar,
+  variants,
+  options,
+} from "../../constants/menuButtonConstants";
 
 function MenuButton() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,6 +14,15 @@ function MenuButton() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    const menuOptions = document.querySelector(".menu-options");
+    if (isMenuOpen) {
+      menuOptions.classList.add("visible");
+    } else {
+      menuOptions.classList.remove("visible");
+    }
+  }, [isMenuOpen]);
 
   return (
     <div className="menu-button-main-container">
@@ -57,6 +71,20 @@ function MenuButton() {
               fill="white"
             />
           </svg>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={isMenuOpen ? "options" : "none"}
+            variants={variants}
+            className="menu-options"
+          >
+            <ul>
+              {options.map((option, index) => (
+                <a  key={index} href={`#${option}`}>
+                  <li id={option}>{option}</li>
+                </a>
+              ))}
+            </ul>
+          </motion.div>
         </motion.div>
       </motion.div>
     </div>

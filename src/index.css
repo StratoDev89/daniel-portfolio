@@ -1,7 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Oswald&family=Poppins:wght@200&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+html {
+  overflow-x: hidden;
 }
 
 a {
@@ -17,38 +24,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: inherit; /* Hereda la altura de línea del elemento padre */
 }
 
-
-
-
-
-
-
-
-
-@font-face {
-  font-family: "Manrope";
-  src: url("assets/fonts/Manrope-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Dosis-ExtraLight";
-  src: url("assets/fonts/Dosis-ExtraLight.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Miedinger-Bold";
-  src: url("assets/fonts/Miedinger-Bold.otf") format("truetype");
-}
-
-@font-face {
-  font-family: "Oswald-Regular";
-  src: url("assets/fonts/Oswald-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "Poppins-Light";
-  src: url("assets/fonts/Poppins-Light.ttf") format("truetype");
-}
 
 
 

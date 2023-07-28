@@ -29,6 +29,39 @@
   height: 1.25rem /* 20px */;
 }
 
+.menu-options {
+  position: absolute;
+  left: 25px;
+  top: 20px;
+  display: none;
+  width: 120px;
+  height: 220px;
+  /* background-color: red; */
+}
+
+.menu-options ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu-options li {
+  color: #fff;
+  font-size: 2.25rem /* 36px */;
+  line-height: 2.5rem /* 40px */;
+  font-family: "Oswald", sans-serif;
+  list-style: none;
+  transition: all ease-out 0.2s;
+  text-transform: capitalize;
+}
+.menu-options li:hover {
+  transform: scale(1.2);
+}
+
+.visible {
+  display: flex;
+}
+
 /* Media query para tamaños de pantalla medianos (ejemplo: tabletas) */
 @media (min-width: 768px) {
   .menu-button-main-container {

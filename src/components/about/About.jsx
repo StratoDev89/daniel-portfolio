@@ -5,8 +5,8 @@ import { text1, text2 } from "../../constants/aboutConstants";
 function About() {
   return (
     <section
-      data-scroll-section
       id="about"
+      data-scroll-section
       className="about-section"
     >
       <div className="about-main-container">

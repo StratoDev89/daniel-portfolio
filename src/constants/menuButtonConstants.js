@@ -1,8 +1,11 @@
 const barsAnimationDuration = 0.3;
 
+export const options =["home", "about", "projects", "contact"]
+
 export const variants = {
-  openMenu: { width: "300px", height: "500px", transition: { duration: 0.3 } },
+  openMenu: { width: "200px", height: "300px", transition: { duration: 0.3 } },
   moveIcon: { x: 10, y: 10 },
+  options: { x:10, opacity:1, transition: { duration: 0.5, delay:0.2 } },
 };
 
 export const topBar = {
