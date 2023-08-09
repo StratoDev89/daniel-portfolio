@@ -4,7 +4,6 @@
   top: 65vh;
   left: 0px;
   width: 100%;
-  /* overflow-x: scroll; */
 }
 
 .slider-track {
@@ -27,31 +26,3 @@
   left: 100%;
 }
 
-/* Media query para tamaños de pantalla medianos (ejemplo: tabletas) */
-/* @media (min-width: 768px) and (max-width: 1023px) {
-  .slider-text-container {
-    top: 75vh;
-  }
-  .slider-text-container h1 {
-    font-size: 170px;
-  }
-  .slider-text-container h1:last-child {
-    position: absolute;
-    color: red;
-    left: 100%;
-  }
-} */
-
-/* Media query para tamaños de pantalla grandes (ejemplo: pantallas de escritorio)
-@media (min-width: 1024px) {
-  .slider-text-container h1 {
-    font-size: 17px;
-    letter-spacing: 0.05em;
-  }
-
-  .slider-text-container h1:last-child {
-    position: absolute;
-    color: red;
-    left: 50%;
-  }
-} */

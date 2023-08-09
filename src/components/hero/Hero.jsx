@@ -10,19 +10,21 @@ function Hero() {
       className="hero-section"
     >
       <div className="main-container">
-        <div className="left-column">
+        <div
+          data-scroll
+          data-scroll-speed="0.1"
+          className="left-column"
+        >
           <img
-            data-scroll
-            data-scroll-speed="0.1"
             className="img"
             src={danielPng}
+            alt="Daniel IA face"
           />
         </div>
         <div className="right-column">
           <div
             data-scroll
             data-scroll-speed="0.2"
-            // data-scroll-direction="vertical"
             className="text-container"
           >
             <span>Fullstack Web Developer</span>
@@ -30,7 +32,7 @@ function Hero() {
         </div>
       </div>
       <SliderText />
-    </section>
+    </section>  
   );
 }
 

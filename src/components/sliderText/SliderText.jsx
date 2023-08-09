@@ -1,8 +1,8 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./sliderText.css";
-import { useEffect, useLayoutEffect } from "react";
-import { useRef, useState } from "react";
+import { useEffect } from "react";
+import { useRef } from "react";
 
 function SliderText() {
   const text1 = useRef(null);
@@ -38,7 +38,7 @@ function SliderText() {
     }
     gsap.set(text1.current, { xPercent: Xpercent });
     gsap.set(text2.current, { xPercent: Xpercent });
-    Xpercent += 0.13 * direction;
+    Xpercent += 0.1 * direction;
     requestAnimationFrame(animation);
   };
 
