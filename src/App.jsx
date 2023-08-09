@@ -10,7 +10,9 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    const locomotiveScroll = new LocomotiveScroll();
+    const locomotiveScroll = new LocomotiveScroll({
+      lenisOptions: { smoothTouch: true },
+    });
   }, []);
   return (
     <div>
