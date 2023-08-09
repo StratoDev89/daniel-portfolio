@@ -24,6 +24,8 @@ function MenuButton() {
     }
   }, [isMenuOpen]);
 
+ 
+
   return (
     <div className="menu-button-main-container">
       <motion.div
@@ -79,7 +81,7 @@ function MenuButton() {
           >
             <ul>
               {options.map((option, index) => (
-                <a  key={index} href={`#${option}`}>
+                <a  key={index} >
                   <li id={option}>{option}</li>
                 </a>
               ))}
